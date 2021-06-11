@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.media-card{
+
+    height: 22rem;
+    width: 18rem;
+    background-color: rgb(247, 244, 244);
+    /* border: 1px solid black; */
+
+}
+
+.media-container{
+    height: 90%;
+    width: 100%;
+    border: 1px solid;
+}
+
+.action-container{
+    height: 10%;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+}
+.action-container div{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    
+}
+
+.img-gallery{
+    height: 100%;
+    width: 100%;
+}
+.video-gallery{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.action-button:hover{
+    cursor: pointer;
+
+}
+
