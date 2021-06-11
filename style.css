@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.video-container{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+}
+video{
+    height: 100%;
+    width: 100%;
+
+}
+#record,#capture{
+    /* fixed : its absolute with reference to body as parent */
+    position: fixed;            
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: black;
+    right: 6rem;
+    height: 4rem;
+    width: 4rem;
+    z-index: 3;
+
+
+}
+
+#inner-record{
+    background-color: red;
+    width: 2.5rem;
+    margin: auto;
+    height: 2.5rem;
+    border-radius: 50%;
+    /* animation: scale 2s infinite; */
+}
+#inner-capture{
+    background-color: white;
+    width: 2.5rem;
+    margin: auto;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.capture-animation{
+    animation  : inOut 0.5s;
+}
+.record-animation{
+    animation : inOut 1s infinite ;
+}
+
+#record{
+    top: 40vh;
+}
+#capture{
+    top: 50vh;
+}
+
+@keyframes inOut {
+    0%{
+        transform: scale(1);
+
+    }
+    50%{
+        transform: scale(1.2);
+
+    }
+    100%{
+        transform: scale(1);
+
+    }
+    
+}
+
+.filter-container{
+    position: fixed;
+    height: 60vh;
+    width: 6vw;
+    left: 6vw;
+    top: 10vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.filter{
+    height: 10vh;
+    border: 2px solid white;
+    width: 6vw;
+    background-image: url(filter_background.jpg);
+    background-blend-mode: soft-light;
+    background-size: cover;
+}
+/* .filter img{
+    height: 100%;
+    width: 100%;
+} */
+
+.zoom-container{
+    height: 16vh;
+    width: 4vw;
+    position: fixed;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    top: 8vw;
+    right: 6rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+
+.zoom{
+    background-color: black;
+    border: 2px solid white;
+    height: 8vh;
+    width: 4vw;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    /* transform: translate(-50%, -50%); */
+    padding-top: 8px;
+    
+}
+
+.zoom:hover{
+    cursor: pointer;
+}
+
+.filter-div{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    /* opacity: 0.5; */
+}
+
+.btnGallery{
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    bottom: 8rem;
+    right : 6rem;
+    color: burlywood;
+}
