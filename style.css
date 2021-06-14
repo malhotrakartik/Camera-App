@@ -146,5 +146,8 @@ video{
     position: fixed;
     bottom: 8rem;
     right : 6rem;
-    color: burlywood;
+    color: white;
+    font-size: 2rem;
+    background-color: black;
+    z-index: 3;
 }

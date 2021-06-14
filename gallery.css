@@ -3,17 +3,30 @@
 }
 body{
     margin: 0;
+    background-color: black;
 }
-
+h1{
+    color: yellow;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 3rem;
+    /* font-size: 1.2rem; */
+}
 .container{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
 }
 
 .media-card{
-
     height: 22rem;
     width: 18rem;
+
     background-color: rgb(247, 244, 244);
     /* border: 1px solid black; */
 
@@ -49,6 +62,18 @@ body{
 .video-gallery{
     height: 100%;
     width: 100%;
+}
+.media-download{
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.media-delete{
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 
